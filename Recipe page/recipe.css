@@ -17,13 +17,13 @@ body {
 }
 
 .card{
-    width:43%;
+    width:50%;
     height: 100%;
     background-color:rgb(255,255,255);
     border-radius: 20px;
-    padding:35px;
+    padding:40px;
     display:block;
-    margin:0px auto 0px auto;
+    margin:100px auto 0px auto;
    
 }
 figure{
@@ -31,7 +31,7 @@ figure{
     
 }
 figure img{
-    height: 265px;
+    width:100%;
     border-radius: 10px;
     max-width:100%;
 }
@@ -73,10 +73,12 @@ header h1{
 }
 
 
-.instructions ol li,.preparation li {
+ol li,.preparation li {
     padding-left:15px;
 }
-
+.instructions  ol li{
+    line-height: 30px;
+}
 .instructions ol li::marker{
     color: rgb(122,73,58);
     font-weight: bold;
