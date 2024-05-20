@@ -1,0 +1,143 @@
+@font-face {
+   src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+   font-family: outfit;
+}
+@font-face {
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-family: young-serif;
+ }
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    padding: 20px;
+    background-color: rgb(243,229,216);
+}
+
+.card{
+    width:43%;
+    height: 100%;
+    background-color:rgb(255,255,255);
+    border-radius: 20px;
+    padding:35px;
+    display:block;
+    margin:0px auto 0px auto;
+   
+}
+figure{
+    margin: 0px;
+    
+}
+figure img{
+    height: 265px;
+    border-radius: 10px;
+    max-width:100%;
+}
+
+header h1{
+    font-family:young-serif,sans-serif;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.preparation-section{
+    background-color:rgb(255,247,252);
+}
+.preparation-section p{
+    color: rgb(107,50,73);
+    font-weight: bolder;
+    font-family:'outfit';
+    padding:10px;
+    font-size: 16px;
+    position:relative;
+    top: 20px;
+    left:10px;
+}
+
+.preparation li,.ingredients li,.instructions li{
+    line-height: 35px;
+    color: rgb(97,87,87);
+    
+}
+.ingredients  li{
+    list-style-type: square;
+}
+.ingredients ul li{
+    padding-left:15px;
+}
+.header-2{
+    font-family: young-serif;
+    font-weight: lighter;
+    color:rgb(122,73,58);
+}
+
+
+.instructions ol li,.preparation li {
+    padding-left:15px;
+}
+
+.instructions ol li::marker{
+    color: rgb(122,73,58);
+    font-weight: bold;
+}
+.nutrition table,th,td{
+    width: 90%;
+    border-bottom: 1px solid rgb(226,226,226);
+    border-collapse: collapse;
+    margin-left: 15px;
+}
+hr{
+    color: rgb(226,226,226);
+}
+.nutrition th,td{
+    padding: 10px 170px 10px 0px;
+    
+}
+.nutrition th{
+    color: rgb(97,87,87)
+}
+.nutrition td{
+    color: rgb(122,73,58);
+    font-weight: bolder;
+}
+
+.last{
+    border-bottom: hidden;
+}
+
+
+@media all and (max-width: 500px) {
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .section-1 {
+      padding: 1rem;
+    }
+  
+    .figure img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ingredients ul,
+    .instructions ol {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .ingredients li,
+    .instructions li {
+      padding: 0.5rem 0;
+    }
+
+    .nutrition th,td{
+        padding: 0px 100px 10px 0px;
+    }
+  
+    .header-2 {
+      font-size: 1.5rem;
+    }
+  }
